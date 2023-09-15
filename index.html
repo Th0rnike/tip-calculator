@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img src="images/SPLITTER.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="calculation">
+                <div class="main-div">
+                    <div class="input_container">
+                        <label for="bill">Bill</label>
+                        <img class="input_holder" src="images/currency-dollar.svg" alt="dollar sign">
+                        <input class="input_field" id="bill" type="number" placeholder="142.55">
+                    </div>
+                    <div class="percent-div">
+                        <label class="tips_label">Select Tip %</label>
+                        <div class="button_container">
+                            <button class="tips_button">5%</button>
+                            <button class="tips_button">10%</button>
+                            <button class="tips_button">15%</button>
+                            <button class="tips_button">25%</button>
+                            <button class="tips_button">50%</button>
+                            <input class="input_button" placeholder="Custom" type="number">
+                        </div>
+                    </div>
+                    <div class="input_container">
+                        <label for="number">Number of People</label>
+                        <img class="input_holder" src="images/person-fill.svg" alt="person sign">
+                        <input class="input_field" id="number" type="number" placeholder="5">
+                    </div>
+                </div>
+                <div id="total">
+                    <!-- <div> -->
+                        <div class="prices first"><p>Tip Amount <span>/ person</span></p> <h2>$4.27</h2></div>
+                        <div class="prices second"><p>Total <span>/ person</span></p> <h2>$32.79</h2></div>                    
+                    <!-- </div> -->
+                    <button id="reset">reset</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+</html>

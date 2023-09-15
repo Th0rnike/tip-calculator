@@ -1,0 +1,252 @@
+/* Reset default styles for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace, 'Titillium Web', sans-serif;
+}
+
+/* Set a common background color for the body */
+body{
+    background-color: #C5E4E7;
+}
+
+/* Header styles */
+#header{
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Calculation container styles */
+#calculation{
+    background-color: #FFFFFF;
+    border-radius: 25px 25px 0 0;
+    padding: 32px 8%;
+}
+
+/* Input container styles */
+.input_container{
+    position: relative
+}
+
+/* Common styles for labels and tips labels */
+.input_container label, .tips_label{
+    display: block;
+    color: #5E7A7D;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+/* Input holder styles */
+.input_holder{
+    position: absolute;
+    top: 62%;
+    left: 1.1rem;
+}
+
+/* label{
+    margin-bottom: 12px;
+} */
+
+
+/* Input field styles */
+.input_field {
+    padding: 6px 18px;
+    border: 1px solid #F3F9FA;
+    border-radius: 5px;
+    background-color: #F3F9FA;
+    width: 100%;
+    color: #00474B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: right;
+}
+
+/* Input field hover effect */
+.input_field:hover {
+    border: 1px solid #26C2AE;
+    cursor: pointer;
+}
+
+/* removes arrows from input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Styles for the button container */
+.button_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Percent-div styles */
+.percent-div {
+    margin: 30px 0;
+}
+
+/* Tips button styles */
+.tips_button{
+    background-color: #00474B;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+/* Tips button hover effect */
+.tips_button:hover{
+    background-color: #26C2AE;
+    color: #00474B;
+    cursor: pointer;
+}
+
+/* Input button styles */
+.input_button, .tips_button{
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
+
+.input_button {
+    border: 1px solid #F3F9FA;
+    background-color: #F3F9FA;
+    color: #547878;
+    width: 100%;
+}
+
+/* Input button hover effect */
+.input_button:hover{
+    border: 1px solid #26C2AE;
+    cursor: pointer;
+}
+
+/* second div */
+
+/* Styles for the second div */
+#total{
+    border-radius: 12px;
+    margin-top: 32px;
+    background-color: #00474B;
+    padding: 36px 22px 22px;
+}
+
+/* Styles for price text */
+.prices p, .prices span{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.prices p{
+    color: white;
+}
+
+/* Styles for price span */
+.prices span{
+    color: #7F9D9F;
+    display: inherit;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+/* Styles for price h2 */
+.prices h2{
+    color: #26C2AE;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: -0.67px;
+    text-align: right;
+}
+
+/* Styles for prices container */
+.prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the reset button */
+#reset{
+    background-color: #26C2AE;
+    color: #00474B;
+    margin-top: 32px;
+    width: 100%;
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 0;
+    transition: background-color 0.5s;
+}
+
+/* Reset button hover effect */
+#reset:hover{
+    background-color: #9FE8DF;
+    cursor: pointer;
+}
+
+
+/* desktop version */
+
+@media (min-width: 700px){
+    section{
+        margin: auto;
+        width: 64%;
+        /* box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20); */
+    }
+
+    /* Styles for the calculation container in desktop version */
+    #calculation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3.4% 3.4% 3.4% 5.2%;
+        gap: 5.2%;
+        border-radius: 25px;
+    }
+    
+    /* Styles for the button container in desktop version */
+    .button_container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px 14px;
+    }
+
+    /* Adjust margin for the total container in desktop version */
+    #total {
+        margin-top: 0;
+    }
+    /* Adjust margin for the reset button in desktop version */
+    #reset {
+        margin-top: 155px;
+    }
+    /* Adjust margin for the percent-div in desktop version */
+    .percent-div {
+        margin: 40px 0;
+    }
+    /* Add margin-bottom for the first label in desktop version */
+    .first {
+        margin-bottom: 30px;
+    }
+    /* Adjust margin-bottom for labels in desktop version */
+    label {
+        margin-bottom: 16px;
+    }
+}
