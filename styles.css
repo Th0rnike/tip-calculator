@@ -172,6 +172,10 @@ input::-webkit-inner-spin-button {
     text-align: right;
 }
 
+.prices h2::before{
+    content: "$";
+}
+
 /* Styles for prices container */
 .prices{
     display: flex;

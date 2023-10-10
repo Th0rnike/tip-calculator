@@ -22,7 +22,7 @@
                     <div class="input_container">
                         <label for="bill">Bill</label>
                         <img class="input_holder" src="images/currency-dollar.svg" alt="dollar sign">
-                        <input class="input_field" id="bill" type="number" placeholder="142.55">
+                        <input class="input_field" id="bill" type="number" placeholder="000.00">
                     </div>
                     <div class="percent-div">
                         <label class="tips_label">Select Tip %</label>
@@ -38,20 +38,19 @@
                     <div class="input_container">
                         <label for="number">Number of People</label>
                         <img class="input_holder" src="images/person-fill.svg" alt="person sign">
-                        <input class="input_field" id="number" type="number" placeholder="5">
+                        <input class="input_field" id="number" type="number" placeholder="0">
                     </div>
                 </div>
                 <div id="total">
                     <!-- <div> -->
-                        <div class="prices first"><p>Tip Amount <span>/ person</span></p> <h2>$4.27</h2></div>
-                        <div class="prices second"><p>Total <span>/ person</span></p> <h2>$32.79</h2></div>                    
+                        <div class="prices first" id="tip_amount"><p>Tip Amount <span>/ person</span></p> <h2>0.00</h2></div>
+                        <div class="prices second" id="total_per_person"><p>Total <span>/ person</span></p> <h2>00.00</h2></div>                    
                     <!-- </div> -->
                     <button id="reset">reset</button>
                 </div>
             </div>
-            
         </section>
     </main>
-
+    <script src="main.js"></script>
 </body>
 </html>
